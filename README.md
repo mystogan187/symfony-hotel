@@ -15,6 +15,8 @@ git clone --recurse-submodules https://github.com/mystogan187/symfony-hotel.git
 DATABASE_URL="mysql://root:123@127.0.0.1:3306/hotel?charset=utf8"
 ```sh
 php bin/console doctrine:database:create
+php bin/console make:migration
+php bin/console doctrine:migrations:migrate
 ```
 
 
